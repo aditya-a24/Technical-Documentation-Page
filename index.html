@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Technical Docs. Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Tutorial</header>
+        <li><a class="nav-link" href="#Python_Intro">Python Intro</a></li>
+        <li><a class="nav-link" href="#Python_Getting_Started">Python Getting Started</a></li>
+        <li><a class="nav-link" href="#Python_Syntax">Python Syntax</a></li>
+        <li><a class="nav-link" href="#Python_Comments">Python Comments</a></li>
+        <li><a class="nav-link" href="#Python_Variables">Python Variables</a></li>
+        <li><a class="nav-link" href="#Python_Data_Types">Python Data Types</a></li>
+        <li><a class="nav-link" href="#Python_If_Else">Python If ... Else</a></li>
+        <li><a class="nav-link" href="#Python_Loops">Python Loops</a></li>
+        <li><a class="nav-link" href="#Python_Function">Python Function</a></li>
+        <li><a class="nav-link" href="#Python_Lambda">Python Lambda</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Python_Intro">
+            <header>Python Introduction</header>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p>It is Used For :</p>
+            <ul>
+                <li>web development (server-side),</li>
+                <li>software development,</li>
+                <li>mathematics,</li>
+                <li>system scripting.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Python_Getting_Started">
+            <header>Python Getting Started</header>
+            <p>Many PCs and Macs will have python already installed.</p>
+            <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+            <code>python --version</code>
+            <p>If you find that you do not have python installed on your computer, then you can download it for free from the following website: <a href="https://www.python.org/">https://www.python.org/</a></p>
+        </section>
+
+        <section class="main-section" id="Python_Syntax">
+            <header>Python Syntax</header>
+            <p>Python syntax can be executed by writing directly in the Command Line:</p>
+            <code
+            >>>> print("Hello, World!")
+Hello, World!</code
+            >
+            <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+            <code>C:\Users\Your Name>python myfile.py</code>
+            <h2 class="sub-heading">Pyhton Indentation</h2>
+            <p>
+                Indentation refers to the spaces at the beginning of a code line.
+                <br>
+                Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+                <br>
+                Python uses indentation to indicate a block of code.
+                <br>
+                Python will give you an error if you skip the indentation.
+            </p>
+        </section>
+
+        <section class="main-section" id="Python_Comments">
+            <header>Python Comments</header>
+            <p>Comments can be used to explain Python code.
+                <br>
+                Comments can be used to make the code more readable.
+                <br>
+                Comments can be used to prevent execution when testing code.
+                <br>
+            </p>
+            <h2 class="sub-heading">Creating a Comment</h2>
+            <p>Comments starts with a <b>#</b>, and Python will ignore them</p>
+            <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
+            <code
+            >#This is a comment 
+print("Hello, World!")</code
+>
+            <h2 class="sub-heading">Multi Line Comments</h2>
+            <p>
+                Python does not really have a syntax for multi line comments.
+                <br>
+                To add a multiline comment you could insert a # for each line:
+            </p>
+            <code
+            >#This is a comment
+#written in
+#more than just one line
+print("Hello, World!")</code
+>
+            <p>
+                Or, not quite as intended, you can use a multiline string.
+                <br>
+                Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:
+            </p>
+            <code
+            >"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")</code
+>
+        </section>
+        <br>
+        <section class="main-section" id="Python_Variables">
+            <header>Python Variables</header>
+            <p>
+                Variables are containers for storing data values.
+                <br>
+                Unlike other programming languages, Python has no command for declaring a variable.
+                <br>
+                A variable is created the moment you first assign a value to it.
+            </p>
+            <code
+            >x = 5
+y = "John"
+print(x)
+print(y)</code
+>
+            <p>String variables can be declared either by using single or double quotes:</p>
+            <code
+            >x = "John"
+# is the same as
+x = 'John'</code
+>
+            <h2 class="sub-heading">Variable Names</h2>
+            <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+            <ul>
+                <li>A variable name must start with a letter or the underscore character</li>
+                <li>A variable name cannot start with a numbe</li>
+                <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+            </ul>
+            <code
+            >#Legal variable names:
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
+#Illegal variable names:
+2myvar = "John"
+my-var = "John"my var = "John"</code
+>
+        </section>
+        <br>
+        <section class="main-section" id="Python_Data_Types">
+            <header>Python Data Types</header>
+            <h2 class="sub-heading">Built-in Data Types</h2>
+            <p>In programming, data type is an important concept.</p>
+            <p>Variables can store data of different types, and different types can do different things.</p>
+            <p>Python has the following data types built-in by default, in these categories:</p>
+            <ul>
+                <li>Text Type:          str</li>
+                <li>Numeric Types:      int, float, complex</li>
+                <li>Sequence Types:     list, tuple, range</li>
+                <li>Mapping Type:       dict</li>
+                <li>Set Types:          set, frozenset</li>
+                <li>Boolean Type:       bool</li>
+                <li>Binary Types:       bytes, bytearray, memoryview</li>
+            </ul>
+            <h2 class="sub-heading">Getting the Data Type</h2>
+            <p>You can get the data type of any object by using the type() function:</p>
+            <code
+            >x = 5
+print(type(x))</code
+>
+        </section>
+        <br>
+        <section class="main-section" id="Python_If_Else">
+            <header>Python If ... Else</header>
+            <p>Python supports the usual logical conditions from mathematics:</p>
+            <ul>
+                <li>Equals: a == b</li>
+                <li>Not Equals: a != b</li>
+                <li>Less than: a < b</li>
+                <li>Less than or equal to: a <= b</li>
+                <li>Greater than: a > b</li>
+                <li>Greater than or equal to: a >= b</li>
+            </ul>
+            <p>An "if statement" is written by using the if keyword.</p>
+            <code
+            >a = 33
+b = 200
+if b > a:
+  print("b is greater than a")</code
+>
+        </section>
+
+        <section class="main-section" id="Python_Loops">
+            <header>Python Loops</header>
+            <p>Python has two primitive loop commands:</p>
+            <ul>
+                <li><b>While</b> loops</li>
+                <li><b>For</b> loops</li>
+            </ul>
+            <p>With the <b>while loop</b> we can execute a set of statements as long as a condition is true.</p>
+            <code
+            >i = 1
+while i < 6:
+  print(i)
+  i += 1</code
+>
+            <p>A <b>for loop</b> is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+            <p>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+            <p>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+            <code>fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)</code>
+        </section>
+
+        <section class="main-section" id="Python_Function">
+            <header>Python Function</header>
+            <p>
+                A function is a block of code which only runs when it is called.
+                <br>
+                You can pass data, known as parameters, into a function.
+                <br>
+                A function can return data as a result.
+            </p>
+            <h2 class="sub-heading">Creating a Function</h2>
+            <p>In Python a function is defined using the def keyword:</p>
+            <code
+            >def my_function():
+  print("Hello from a function")</code>
+            <h2 class="sub-heading">Calling a Function</h2>
+            <p>To call a function, use the function name followed by parenthesis:</p>
+            <code>def my_function():
+  print("Hello from a function")
+
+my_function()</code>
+            <h2 class="sub-heading">Arguments</h2>
+            <p>Information can be passed into functions as arguments.</p>
+            <p>Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+            <p>The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+            <code>def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")</code>
+        </section>
+
+        <section class="main-section" id="Python_Lambda">
+            <header>Python Lambda</header>
+            <p>A lambda function is a small anonymous function.</p>
+            <p>A lambda function can take any number of arguments, but can only have one expression.</p>
+            <h2 class="sub-heading">Syntax</h2>
+            <code>lambda arguments : expression</code>
+            <p>The expression is executed and the result is returned:</p>
+            <code>x = lambda a : a + 10
+print(x(5))</code>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp" target="_blank">w3schools</a></li>
+        </section>
+    </main>
+</body>
+</html>
